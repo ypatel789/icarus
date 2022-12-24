@@ -1,0 +1,146 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"IYYQIN":35,"ZOMFQJ":5,"CSJVQV":20}'}
+components:
+- type: Label
+  properties: {role: title, align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: New Project, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: 'fa:line-chart'}
+  name: label_1
+  layout_properties: {grid_position: 'ZVCYNN,NRAUMK'}
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: Client
+    border: ''
+    enabled: true
+    foreground: ''
+    items: []
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: ''
+    bold: false
+    underline: false
+    include_placeholder: true
+  name: client
+  layout_properties: {grid_position: 'ZKKWHX,IYYQIN'}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: or, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_4
+  layout_properties: {grid_position: 'ZKKWHX,ZOMFQJ'}
+- type: Button
+  properties: {role: tonal-button, align: full, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: New client, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: create_client
+  layout_properties: {grid_position: 'ZKKWHX,CSJVQV'}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Project Name,
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: project_name
+  layout_properties: {grid_position: 'ZXRHPV,DCGZMC'}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Project Code,
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: project_code
+  layout_properties: {grid_position: 'DLKKXU,HMGEDA'}
+- type: TextArea
+  properties: {role: null, align: left, height: '', tooltip: '', placeholder: Description,
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: description
+  layout_properties: {grid_position: 'HMTQYC,CJTAHI'}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_1
+  layout_properties: {grid_position: 'DGOIQM,VVZHHU'}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Project Fees,
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: title
+  layout_properties: {grid_position: 'RULMNL,GXZURI'}
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: Budget
+    border: ''
+    enabled: true
+    foreground: ''
+    items: []
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: ''
+    bold: false
+    underline: false
+    include_placeholder: true
+  name: drop_down_1
+  layout_properties: {grid_position: 'LNHXRH,DIIPMF'}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_2
+  layout_properties: {grid_position: 'NHJQWY,YRTVUS'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Tasks, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_2
+  layout_properties: {grid_position: 'SUKSYK,VMYTYR'}
+- type: RepeatingPanel
+  properties: {item_template: ProjectCreationView.ItemTemplate2}
+  name: repeating_panel_1
+  layout_properties: {grid_position: 'DDNSRG,QMRCIM'}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_3
+  layout_properties: {grid_position: 'ZZXTGS,BQPEMB'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Team, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_3
+  layout_properties: {grid_position: 'HQNWUC,LAPDHX'}
+- type: RepeatingPanel
+  properties: {item_template: ProjectCreationView.ItemTemplate3}
+  name: repeating_panel_2
+  layout_properties: {grid_position: 'CNRTPW,GUDWAO'}
+- type: Button
+  properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: Save Project, font_size: null, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: ''}
+  name: button_1
+  layout_properties: {grid_position: 'LSCHLT,WOLZRQ'}
+- type: Button
+  properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: Cancel, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: button_2
+  layout_properties: {grid_position: 'LSCHLT,BRIZKX'}
+is_package: true

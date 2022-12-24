@@ -1,0 +1,22 @@
+container: {type: DataRowPanel}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: PYKBJJ}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {column: TRAUGP}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {column: PJBQBY}
+- type: Button
+  properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: 'fa:download'}
+  name: download
+  layout_properties: {column: HXGEKN}
+is_package: true

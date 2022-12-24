@@ -1,0 +1,33 @@
+container: {type: DataRowPanel}
+components:
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: justify, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_project_name
+  layout_properties: {column: XVYYWW}
+  components:
+  - type: Label
+    properties: {}
+    name: project_name
+    layout_properties: {column: XVYYWW}
+  - type: FlowPanel
+    properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
+      foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+    name: flow_panel_buttons
+    layout_properties: {}
+    components:
+    - type: Button
+      properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:pencil-square'}
+      name: edit
+      layout_properties: {}
+    - type: Button
+      properties: {role: filled-button, align: right, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:trash'}
+      name: delete_project
+      layout_properties: {}
+is_package: true

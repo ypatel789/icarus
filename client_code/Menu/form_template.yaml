@@ -1,0 +1,93 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {grid_position: 'HBEKAD,KDKBBR'}
+  components:
+  - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Projects, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: 'fa:bar-chart'}
+    name: projects
+    layout_properties: {grid_position: 'EDCOAV,WCOWMV'}
+    components: []
+    event_bindings: {click: projects_click}
+  - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Team, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: 'fa:male'}
+    name: team
+    layout_properties: {grid_position: 'LAPAKA,HZHEGV'}
+    event_bindings: {click: team_click}
+  - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Time, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: 'fa:clock-o'}
+    name: time
+    layout_properties: {grid_position: 'RJZNZL,VUFPSN'}
+    event_bindings: {click: time_click}
+  - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Invoices, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: 'fa:gbp'}
+    name: invoices
+    layout_properties: {grid_position: 'AJOVFI,BCQJIP'}
+    event_bindings: {click: invoices_click}
+  - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Manage, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: 'fa:align-justify'}
+    name: manage
+    layout_properties: {grid_position: 'QZQUDG,DJPBKT'}
+    event_bindings: {click: manage_click}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_1
+  layout_properties: {grid_position: 'DFKAAP,BJSSWN'}
+- type: Link
+  properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: My Profile, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+    spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+    italic: false, background: 'theme:Secondary Container', bold: false, underline: false,
+    icon: 'fa:archive'}
+  name: my_profile
+  layout_properties: {grid_position: 'QRCKMT,TKCFVZ'}
+- type: Link
+  properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: My Time Report, font_size: null, wrap_on: mobile, font: '',
+    col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+    italic: false, background: 'theme:Secondary Container', bold: false, underline: false,
+    icon: 'fa:newspaper-o'}
+  name: my_time_report
+  layout_properties: {grid_position: 'NMPZGG,OIZNJA'}
+- type: Link
+  properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: Quotes, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+    spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+    italic: false, background: 'theme:Secondary Container', bold: false, underline: false,
+    icon: 'fa:arrow-circle-o-up'}
+  name: link_1
+  layout_properties: {grid_position: 'UQGIVT,ACCHNS'}
+  event_bindings: {}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_2
+  layout_properties: {grid_position: 'HJDXMM,SQUJSB'}
+- type: Link
+  properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: Sign Out, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+    spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: 'fa:sign-out'}
+  name: logout
+  layout_properties: {grid_position: 'SJVINB,OEALKE'}
+  event_bindings: {click: logout_click}
+is_package: true
+custom_component: true

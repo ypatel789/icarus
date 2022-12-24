@@ -1,0 +1,57 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+  event_bindings: {refreshing_data_bindings: form_refreshing_data_bindings}
+components:
+- type: Label
+  properties: {role: title, align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: Tasks, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: title_tasks
+  layout_properties: {grid_position: 'ZUCDDB,DOLGBR'}
+- type: Button
+  properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: New Task, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: 'fa:plus'}
+  name: new_task
+  layout_properties: {grid_position: 'PIMIVN,KJAWJL'}
+  event_bindings: {click: new_task_click}
+- type: Button
+  properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: Add Activity, font_size: null, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: 'fa:plus'}
+  name: add_activity
+  layout_properties: {grid_position: 'PIMIVN,JZTIJE'}
+  event_bindings: {click: add_activity_click}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_2
+  layout_properties: {grid_position: 'XKRYKI,KZGJVV'}
+- type: DataGrid
+  properties:
+    role: null
+    columns:
+    - {id: JIVOYT, title: Column 1, data_key: column_1, $$hashKey: 'object:192877'}
+    auto_header: false
+    tooltip: ''
+    border: ''
+    foreground: ''
+    rows_per_page: 20
+    visible: true
+    wrap_on: never
+    show_page_controls: true
+    spacing_above: small
+    spacing_below: small
+    background: ''
+  name: data_grid_1
+  layout_properties: {grid_position: 'UHFGYU,QHBUUV'}
+  components:
+  - type: RepeatingPanel
+    properties: {spacing_above: none, spacing_below: none, item_template: TaskList.RowTemplate4}
+    name: repeating_panel_tasks
+    layout_properties: {}
+is_package: true
+custom_component: true

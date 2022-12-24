@@ -1,0 +1,46 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: title, align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: Create New Client, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: 'fa:building'}
+  name: label_1
+  layout_properties: {grid_position: 'XFUWOQ,JREBNK'}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Client Name,
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: client_name
+  layout_properties: {grid_position: 'SEKHUV,SAGIBR'}
+- type: TextArea
+  properties: {role: null, align: left, height: '', tooltip: '', placeholder: Address,
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: address
+  layout_properties: {grid_position: 'BTTHSI,HRCCLA'}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_1
+  layout_properties: {grid_position: 'FPFOUQ,ORFOCS'}
+- type: Button
+  properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: Save client, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: save_client
+  layout_properties: {grid_position: 'XBLLZA,EGUKAJ'}
+  event_bindings: {click: save_client_click}
+- type: Button
+  properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: Cancel, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: cancel_client
+  layout_properties: {grid_position: 'XBLLZA,JFIJWI'}
+  event_bindings: {click: cancel_client_click}
+is_package: true

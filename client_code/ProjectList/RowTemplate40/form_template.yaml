@@ -1,0 +1,12 @@
+container: {type: DataRowPanel}
+components:
+- type: FlowPanel
+  properties: {}
+  name: flow_panel_1
+  layout_properties: {column: EIIIYX}
+  components:
+  - type: Label
+    properties: {}
+    name: client_name
+    layout_properties: {}
+is_package: true

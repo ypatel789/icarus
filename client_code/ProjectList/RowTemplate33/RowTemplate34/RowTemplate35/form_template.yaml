@@ -1,0 +1,28 @@
+container: {type: DataRowPanel}
+components:
+- type: DataGrid
+  properties:
+    role: null
+    columns:
+    - {id: CRIPBZ, title: Column 1, data_key: column_1, $$hashKey: 'object:100079',
+      width: 542, expand: false}
+    - {id: NYTEMX, title: Column 2, data_key: column_2, $$hashKey: 'object:100080'}
+    auto_header: false
+    tooltip: ''
+    border: ''
+    foreground: ''
+    rows_per_page: 20
+    visible: true
+    wrap_on: never
+    show_page_controls: false
+    spacing_above: small
+    spacing_below: small
+    background: ''
+  name: data_grid_1
+  layout_properties: {column: WAPFNY}
+  components:
+  - type: RepeatingPanel
+    properties: {spacing_above: none, spacing_below: none, item_template: ProjectList.RowTemplate33.RowTemplate34.RowTemplate35.RowTemplate36}
+    name: repeating_panel_1
+    layout_properties: {}
+is_package: true

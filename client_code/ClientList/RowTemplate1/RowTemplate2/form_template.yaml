@@ -1,0 +1,20 @@
+container: {type: DataRowPanel}
+components:
+- type: FlowPanel
+  properties: {}
+  name: flow_panel_1
+  layout_properties: {column: JQTBIF}
+  components:
+  - type: Button
+    properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Edit, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: edit_contact
+    layout_properties: {}
+    event_bindings: {click: edit_contact_click}
+  - type: Label
+    properties: {}
+    name: contact_name
+    layout_properties: {}
+is_package: true

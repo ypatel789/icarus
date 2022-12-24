@@ -1,0 +1,230 @@
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}
+- source: /runtime/services/anvil/users.yml
+  client_config: {allow_signup: true, enable_automatically: true, use_email: true,
+    confirm_email: true, require_secure_passwords: true, allow_remember_me: true,
+    remember_me_days: 30}
+  server_config: {user_table: users}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {}
+startup: {type: module, module: StartUpModule}
+package_name: Icarus
+allow_embedding: false
+name: Icarus
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+metadata: {logo_img: 'asset:favicon.png', title: Icarus, description: Project Management}
+startup_form: null
+db_schema:
+  contacts:
+    title: contacts
+    client: none
+    server: full
+    columns:
+    - name: first_name
+      admin_ui: {width: 200}
+      type: string
+    - name: last_name
+      admin_ui: {width: 200}
+      type: string
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+    - name: title
+      admin_ui: {width: 200}
+      type: string
+    - name: office_number
+      admin_ui: {width: 200}
+      type: string
+    - name: mobile_number
+      admin_ui: {width: 200}
+      type: string
+    - name: fax_number
+      admin_ui: {width: 200}
+      type: string
+  tasks:
+    title: tasks
+    client: none
+    server: full
+    columns:
+    - name: task
+      admin_ui: {width: 200}
+      type: string
+    - name: activity
+      admin_ui: {width: 200}
+      type: link_multiple
+      target: activity
+  invoice_items:
+    title: invoice_items
+    client: none
+    server: full
+    columns:
+    - name: type
+      admin_ui: {width: 200}
+      type: string
+    - name: description
+      admin_ui: {width: 200}
+      type: string
+    - name: quantity
+      admin_ui: {width: 200}
+      type: number
+    - name: unit_price
+      admin_ui: {width: 200}
+      type: number
+    - name: amount
+      admin_ui: {width: 200}
+      type: number
+  activity:
+    title: activity
+    client: none
+    server: full
+    columns:
+    - name: activity
+      admin_ui: {width: 200}
+      type: string
+  files:
+    title: files
+    client: none
+    server: full
+    columns:
+    - name: Column0
+      admin_ui: {width: 200}
+      type: link_single
+      target: projects
+  quotes:
+    title: quotes
+    client: none
+    server: full
+    columns:
+    - name: received
+      admin_ui: {width: 200}
+      type: date
+    - name: sent
+      admin_ui: {width: 200}
+      type: date
+    - name: fee
+      admin_ui: {width: 200}
+      type: number
+    - name: sent
+      admin_ui: {width: 200}
+      type: bool
+  clients:
+    title: clients
+    client: none
+    server: full
+    columns:
+    - name: client_name
+      admin_ui: {width: 200}
+      type: string
+    - name: contacts
+      admin_ui: {width: 200}
+      type: link_multiple
+      target: contacts
+    - name: address
+      admin_ui: {width: 200}
+      type: string
+    - name: projects
+      admin_ui: {width: 200}
+      type: link_multiple
+      target: projects
+  users:
+    title: Users
+    client: none
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+    - name: enabled
+      admin_ui: {width: 100}
+      type: bool
+    - name: last_login
+      admin_ui: {width: 200}
+      type: datetime
+    - name: password_hash
+      admin_ui: {width: 200}
+      type: string
+    - name: n_password_failures
+      admin_ui: {width: 200}
+      type: number
+    - name: confirmed_email
+      admin_ui: {width: 200}
+      type: bool
+    - name: signed_up
+      admin_ui: {width: 200}
+      type: datetime
+    - name: remembered_logins
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: email_confirmation_key
+      admin_ui: {width: 200}
+      type: string
+  projects:
+    title: projects
+    client: none
+    server: full
+    columns:
+    - name: engineers
+      admin_ui: {width: 200}
+      type: link_multiple
+      target: users
+    - name: project_id
+      admin_ui: {width: 200}
+      type: string
+    - name: project_address
+      admin_ui: {width: 200}
+      type: string
+    - name: project_description
+      admin_ui: {width: 200}
+      type: string
+    - name: is_cp
+      admin_ui: {width: 200}
+      type: bool
+    - name: project_quote
+      admin_ui: {width: 200}
+      type: link_multiple
+      target: quotes
+    - name: invoices
+      admin_ui: {width: 200}
+      type: link_multiple
+      target: invoices
+    - name: is_complete
+      admin_ui: {width: 200}
+      type: bool
+  invoices:
+    title: invoices
+    client: none
+    server: full
+    columns:
+    - name: invoice_id
+      admin_ui: {width: 200}
+      type: number
+    - name: po_number
+      admin_ui: {width: 200}
+      type: string
+    - name: issue_date
+      admin_ui: {width: 200}
+      type: date
+    - name: due_date
+      admin_ui: {width: 200}
+      type: date
+    - name: subject
+      admin_ui: {width: 200}
+      type: string
+    - name: sub_total
+      admin_ui: {width: 200}
+      type: number
+    - name: tax
+      admin_ui: {width: 200}
+      type: number
+    - name: amount_due
+      admin_ui: {width: 200}
+      type: number
+    - name: status
+      admin_ui: {width: 200}
+      type: string
+renamed: true

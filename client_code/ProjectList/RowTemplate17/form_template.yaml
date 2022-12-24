@@ -1,0 +1,18 @@
+container: {type: DataRowPanel}
+components:
+- type: FlowPanel
+  properties: {role: flow-padding, spacing: medium, align: left, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: 'theme:Surface
+      Variant'}
+  name: flow_panel_1
+  layout_properties: {column: XVYYWW}
+  components:
+  - type: Label
+    properties: {}
+    name: client_name
+    layout_properties: {}
+- type: RepeatingPanel
+  properties: {spacing_above: none, spacing_below: none, item_template: ProjectList.RowTemplate17.RowTemplate19}
+  name: repeating_panel_1
+  layout_properties: {column: null}
+is_package: true

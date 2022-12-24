@@ -1,0 +1,11 @@
+container: {type: DataRowPanel}
+components:
+- type: Label
+  properties: {}
+  name: client_name
+  layout_properties: {column: TTCTGC}
+- type: RepeatingPanel
+  properties: {spacing_above: none, spacing_below: none, item_template: ProjectList.RowTemplate15.RowTemplate16}
+  name: repeating_panel_1
+  layout_properties: {column: TTCTGC}
+is_package: true

@@ -1,0 +1,7 @@
+container: {type: DataRowPanel}
+components:
+- type: RepeatingPanel
+  properties: {spacing_above: none, spacing_below: none, item_template: ProjectList.RowTemplate27.RowTemplate29}
+  name: repeating_panel_1
+  layout_properties: {column: MYNYRZ}
+is_package: true

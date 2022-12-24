@@ -1,0 +1,9 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {}
+  name: project_team
+  layout_properties: {grid_position: 'CRTINH,DQUDSA'}
+is_package: true

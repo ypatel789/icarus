@@ -1,0 +1,175 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: justify, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_1
+  layout_properties: {grid_position: 'VNTTLD,KZHAGP'}
+  components:
+  - type: FlowPanel
+    properties: {}
+    name: flow_panel_2
+    layout_properties: {}
+    components:
+    - type: Button
+      properties: {role: tonal-button, align: left, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: Back to projects, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: 'fa:arrow-left'}
+      name: back_to_projects
+      layout_properties: {}
+  - type: FlowPanel
+    properties: {role: null, spacing: medium, align: right, tooltip: '', border: '',
+      foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+    name: flow_panel_3
+    layout_properties: {grid_position: 'VNTTLD,AMPWLI'}
+    components:
+    - type: TextBox
+      properties: {}
+      name: search_bar
+      layout_properties: {}
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: justify, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_4
+  layout_properties: {grid_position: 'JPMAJY,NYNMFV'}
+  components:
+  - type: FlowPanel
+    properties: {}
+    name: flow_panel_5
+    layout_properties: {}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: '[', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: bracket
+      layout_properties: {}
+    - type: Label
+      properties: {}
+      name: project_id
+      layout_properties: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: ']', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1
+      layout_properties: {}
+    - type: Label
+      properties: {}
+      name: project_name
+      layout_properties: {}
+  - type: FlowPanel
+    properties: {}
+    name: flow_panel_6
+    layout_properties: {}
+    components:
+    - type: Button
+      properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:pencil'}
+      name: edit_project
+      layout_properties: {}
+    - type: Button
+      properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:trash'}
+      name: delete_project
+      layout_properties: {}
+- type: ColumnPanel
+  properties: {role: outlined-card, col_widths: '{}'}
+  name: outlined_card_1
+  layout_properties: {grid_position: 'LMRHNZ,WDPYUM'}
+  components:
+  - type: Plot
+    properties: {}
+    name: plot_1
+    layout_properties: {grid_position: 'IXRXIN,ZWNWJR'}
+  - type: ColumnPanel
+    properties: {role: outlined-card}
+    name: outlined_card_2
+    layout_properties: {grid_position: 'MOCUTP,BSFQJG'}
+  - type: ColumnPanel
+    properties: {role: outlined-card}
+    name: outlined_card_3
+    layout_properties: {grid_position: 'MOCUTP,JIEPKZ'}
+  - type: ColumnPanel
+    properties: {role: outlined-card}
+    name: outlined_card_4
+    layout_properties: {grid_position: 'MOCUTP,MLKCTZ'}
+  - type: ColumnPanel
+    properties: {role: outlined-card}
+    name: outlined_card_5
+    layout_properties: {grid_position: 'MOCUTP,BISJKW'}
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_7
+  layout_properties: {grid_position: 'JSDCQM,WJKOEU'}
+  components:
+  - type: Link
+    properties: {role: tab-link, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Tasks, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: 'fa:tasks'}
+    name: project_task
+    layout_properties: {}
+  - type: Link
+    properties: {role: tab-link, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Team, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: 'fa:male'}
+    name: project_team
+    layout_properties: {}
+  - type: Link
+    properties: {role: tab-link, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Invoices, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: 'fa:gbp'}
+    name: project_invoices
+    layout_properties: {}
+- type: ColumnPanel
+  properties: {role: outlined-card, col_widths: '{}'}
+  name: outlined_card_6
+  layout_properties: {grid_position: 'YNAFHV,UAQICH'}
+  components:
+  - type: Label
+    properties: {role: body, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: All Time, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: title_time
+    layout_properties: {grid_position: 'SGGJCI,KBIMGM'}
+  - type: RepeatingPanel
+    properties: {item_template: ProjectView.ItemTemplate9}
+    name: repeating_panel_1
+    layout_properties: {grid_position: 'KVFMYP,KQNWIV'}
+- type: ColumnPanel
+  properties: {role: outlined-card, col_widths: '{}'}
+  name: outlined_card_7
+  layout_properties: {grid_position: 'LCCLTD,GUOYVG'}
+  components:
+  - type: Label
+    properties: {role: body, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: All Time, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: title_time_copy
+    layout_properties:
+      col_widths: {}
+      grid_position: RYYRXY,HZSJRL
+  - type: RepeatingPanel
+    properties: {item_template: ProjectView.ItemTemplate10}
+    name: repeating_panel_2
+    layout_properties: {grid_position: 'EUDCUP,QCCRPM'}
+- type: ColumnPanel
+  properties: {role: outlined-card}
+  name: outlined_card_8
+  layout_properties: {grid_position: 'FHASKK,HAKIEF'}
+is_package: true

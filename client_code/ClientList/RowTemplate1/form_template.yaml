@@ -1,0 +1,30 @@
+container:
+  type: DataRowPanel
+  properties: {role: bottom-border, align: left, tooltip: '', border: '', foreground: '',
+    auto_display_data: true, visible: true, font_size: null, font: '', spacing_above: none,
+    spacing_below: none, italic: false, background: '', bold: false, underline: false}
+components:
+- type: FlowPanel
+  properties: {role: flow-padding, spacing: medium, align: left, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: 'theme:Surface
+      Variant'}
+  name: flow_panel_1
+  layout_properties: {column: JQTBIF}
+  components:
+  - type: Button
+    properties: {role: filled-button, align: left, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Edit, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: edit_client
+    layout_properties: {column: JQTBIF}
+    event_bindings: {click: edit_client_click}
+  - type: Label
+    properties: {}
+    name: client_name
+    layout_properties: {}
+- type: RepeatingPanel
+  properties: {spacing_above: none, spacing_below: none, item_template: ClientList.RowTemplate1.RowTemplate2}
+  name: repeating_panel_contacts
+  layout_properties: {column: JQTBIF}
+is_package: true

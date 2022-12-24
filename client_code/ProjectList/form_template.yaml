@@ -1,0 +1,55 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: title, align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: All Projects, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: all_projects_title
+  layout_properties: {grid_position: 'KZUBYT,NZPGZP'}
+- type: Button
+  properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: New project, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: 'fa:plus'}
+  name: new_project
+  layout_properties: {grid_position: 'TGFQYD,ACDOSK'}
+  event_bindings: {}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Search by project or client,
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: search_bar
+  layout_properties: {grid_position: 'TGFQYD,IVMGCU'}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_2
+  layout_properties: {grid_position: 'XKRYKI,KZGJVV'}
+- type: DataGrid
+  properties:
+    role: null
+    columns:
+    - {id: EVNJOG, title: Column 1, data_key: column_1, $$hashKey: 'object:139695'}
+    auto_header: false
+    tooltip: ''
+    border: ''
+    foreground: ''
+    rows_per_page: 20
+    visible: true
+    wrap_on: never
+    show_page_controls: true
+    spacing_above: small
+    spacing_below: small
+    background: ''
+  name: data_grid_1
+  layout_properties: {grid_position: 'RXZAGN,BJCGMN'}
+  components:
+  - type: RepeatingPanel
+    properties: {spacing_above: none, spacing_below: none, item_template: ProjectList.RowTemplate43}
+    name: repeating_panel_clients
+    layout_properties: {}
+is_package: true
+custom_component: true
